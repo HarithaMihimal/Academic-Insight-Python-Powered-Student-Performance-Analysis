@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gender Distribution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Gender Distribution</h1>
+    <div class="plot-container">
+        <img src="{{ url_for('static', filename='images/gender_distribution.png') }}" alt="Gender Distribution Plot">
+    </div>
+    <a href="/">Back to Dashboard</a>
+</body>
+</html>

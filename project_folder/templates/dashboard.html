@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Student Performance Dashboard</h1>
+    
+    <div class="container">
+        <div class="visualization">
+            <h2>Gender Distribution</h2>
+            <img src="{{ url_for('static', filename='images/gender_distribution.png') }}" alt="Gender Distribution">
+        </div>
+
+        <div class="visualization">
+            <h2>Parent Education vs Student Score</h2>
+            <img src="{{ url_for('static', filename='images/score_comparison.png') }}" alt="Score Comparison">
+        </div>
+
+        <div class="visualization">
+            <h2>Ethnic Group Distribution</h2>
+            <img src="{{ url_for('static', filename='images/ethnic_distribution.png') }}" alt="Ethnic Group Distribution">
+        </div>
+
+        <div class="visualization">
+            <h2>Math Scores Boxplot</h2>
+            <img src="{{ url_for('static', filename='images/math_score_boxplot.png') }}" alt="Math Scores Boxplot">
+        </div>
+
+        <div class="visualization">
+            <h2>Reading Scores Boxplot</h2>
+            <img src="{{ url_for('static', filename='images/reading_score_boxplot.png') }}" alt="Reading Scores Boxplot">
+        </div>
+
+        <div class="visualization">
+            <h2>Writing Scores Boxplot</h2>
+            <img src="{{ url_for('static', filename='images/writing_score_boxplot.png') }}" alt="Writing Scores Boxplot">
+        </div>
+    </div>
+
+</body>
+</html>

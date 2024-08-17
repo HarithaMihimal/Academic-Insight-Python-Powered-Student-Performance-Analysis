@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Performance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Student Performance Dashboard</h1>
+    <ul>
+        <li><a href="{{ url_for('gender_distribution') }}">Gender Distribution</a></li>
+        <li><a href="{{ url_for('score_comparison') }}">Score Comparison</a></li>
+        <li><a href="{{ url_for('ethnic_distribution') }}">Ethnic Distribution</a></li>
+    </ul>
+</body>
+</html>
